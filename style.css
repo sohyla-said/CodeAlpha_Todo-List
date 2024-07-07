@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+#todolist{
+    background-color: white;
+    width: 40%;
+    border: 1px solid #d53369;
+    /* height: 40%; */
+    height: auto;
+    margin: auto;
+    /* margin-top: 150px; */
+    margin-top: 10%;
+    padding: 1% 0 1.5% 5%;
+    color: #002D62;
+    border-radius: 30px;
+    box-shadow: #daae51;
+}
+
+
+#heading{
+    text-decoration: underline;
+}
+
+
+#todolist-input{
+    padding: 2%;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+#todolist-input:focus{
+    outline: none; /* Remove default focus outline */
+    border-color: #d53369;
+    box-shadow: 0 0 5px #d53369;
+  }
+#todolist-input::placeholder {
+   color: #002D62; /* Placeholder text color */
+}
+
+
+#todolist-button{
+    width: 15%;
+    margin-left: 5px;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #002D62;
+    font-size: 15px;
+}
+#todolist-button:hover{
+    outline: none;
+    border-color: #d53369;
+    box-shadow: 0 0 5px #d53369;
+    cursor:pointer;
+}
+
+
+
+.todolist-item{
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* transition: transform 0.3s ease; */
+    /* transition: text-shadow 0.3s ease; */
+}
+.todolist-item:hover{
+    /* transform: scale(0.5);  */
+    /* text-shadow: 2px 2px 4px #daae51; */
+    color: #d53369;
+}
+
+.todolist-item i{
+    float: inline-end;
+    margin-right: 15%;
+    color: rgb(179, 22, 22);
+}
+
+
+.completed {
+    text-decoration: line-through;
+}
+
+
+@media (max-width:768px) {
+    #todolist{
+        width: 70%;
+        padding-left: 8%;
+        font-size: 14px;
+    }
+
+    #todolist-input{
+        font-size: 14px;
+      }
+
+      #todolist-button{
+        font-size: 14px;
+    }
+
+    .todolist-item{
+        font-size: 18px;
+    }
+    .todolist-item i{
+        font-size: 16px;
+    }
+}
